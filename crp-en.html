@@ -104,8 +104,10 @@
                 <!-- Advantages Grid -->
                 <div class="fade-up"
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 64px;">
-                    <div
-                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light);">
+                    <div onclick="openModal('proprietary-tech')"
+                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); cursor: pointer; transition: transform 0.2s;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
                         <div class="text-primary" style="margin-bottom: 12px;"><i data-lucide="award"
                                 style="width: 24px;"></i></div>
                         <h4 style="margin-bottom: 8px;">Proprietary Technology</h4>
@@ -411,6 +413,17 @@
         <div class="modal-body">
             <h3>World Class Certifications and Standards</h3>
             <p>Full information available on the main page.</p>
+        </div>
+    </div>
+
+    <!-- Proprietary Tech Modal -->
+    <div id="modal-content-proprietary-tech" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Proprietary Technology</h3>
+            <p>CROBOTP holds over 90 patents in industrial robotics and control systems. As a complete chain
+                manufacturer, it develops and produces all critical components: controllers, servo motors, intelligent
+                sensors, and complete robots. This vertical integration ensures total compatibility, direct technical
+                support, and customization capability according to specific manufacturing requirements.</p>
         </div>
     </div>
 
