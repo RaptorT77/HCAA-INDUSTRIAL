@@ -600,3 +600,30 @@ img {
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
+/* Usage: Modal Call to Action */
+.modal-cta {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-dark);
+    text-align: center;
+}
+
+.modal-cta p {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.btn-filled {
+    background-color: var(--primary);
+    color: #fff;
+    border: 2px solid var(--primary);
+}
+
+.btn-filled:hover {
+    background-color: transparent;
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
