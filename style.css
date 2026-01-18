@@ -410,6 +410,20 @@ img {
     margin-bottom: var(--space-2);
 }
 
+/* About Us Lists */
+.tech-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text-muted);
+    font-size: var(--text-lg);
+}
+
+.tech-list li i {
+    color: var(--primary);
+    min-width: 20px;
+}
+
 /* Contact Form */
 .form-input {
     width: 100%;
