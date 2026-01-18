@@ -749,3 +749,18 @@ img {
 .hidden-modal-content {
     display: none !important;
 }
+
+/* Location Section */
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
