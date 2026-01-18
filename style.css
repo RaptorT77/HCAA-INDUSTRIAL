@@ -478,6 +478,7 @@ img {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* =========================================
    Service Modals
    ========================================= */
@@ -573,23 +574,29 @@ img {
 }
 
 .modal-body ul li::before {
-    content: '?';
-    color: var(--primary);
-    font-weight: bold;
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary);
+    margin-top: 10px;
+    flex-shrink: 0;
 }
 
 /* Scrollbar for modal */
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
+
 .modal-content::-webkit-scrollbar-track {
     background: var(--bg-dark);
 }
+
 .modal-content::-webkit-scrollbar-thumb {
     background: var(--border-light);
     border-radius: 4px;
 }
+
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
-
