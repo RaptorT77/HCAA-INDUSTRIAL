@@ -509,9 +509,9 @@
                     <div class="footer-col">
                         <h4>LEGAL</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Aviso legal</a></li>
-                            <li><a href="#">Política de cookies</a></li>
+                            <li><a href="#" onclick="openModal('legal-privacy')">Política de privacidad</a></li>
+                            <li><a href="#" onclick="openModal('legal-notice')">Aviso legal</a></li>
+                            <li><a href="#" onclick="openModal('legal-cookies')">Política de cookies</a></li>
                         </ul>
                     </div>
 
@@ -711,6 +711,76 @@
                 <p>¿Quieres saber más sobre Virtual Commissioning?</p>
                 <a href="#contacto" onclick="closeModal()" class="btn btn-filled">CONTÁCTANOS</a>
             </div>
+        </div>
+    </div>
+
+    <div id="modal-content-legal-privacy" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Aviso de Privacidad</h3>
+            <p style="margin-bottom: 16px;"><strong>HCAA</strong>, con domicilio en México, es responsable del uso y
+                protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">¿Para qué fines utilizaremos sus datos personales?
+            </h4>
+            <p>Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son
+                necesarias para el servicio que solicita:</p>
+            <ul>
+                <li>Proveer los servicios de ingeniería y automatización requeridos.</li>
+                <li>Facturación y cobro.</li>
+                <li>Evaluación para reclutamiento y selección de personal (sección "Trabajar en HCAA").</li>
+                <li>Dar respuesta a solicitudes de cotización enviadas a través de nuestro sitio web.</li>
+            </ul>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">¿Qué datos personales utilizaremos?</h4>
+            <p>Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los
+                siguientes datos personales: Nombre, Teléfono, Correo electrónico, Nombre de la empresa y Cargo.</p>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">Derechos ARCO</h4>
+            <p>Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las
+                condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su
+                información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que
+                la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo
+                utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines
+                específicos (Oposición).</p>
+        </div>
+    </div>
+
+    <div id="modal-content-legal-notice" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Aviso Legal</h3>
+            <p style="margin-bottom: 16px;">El presente Aviso Legal regula el uso del sitio web de
+                <strong>HCAA</strong>.
+            </p>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">Propiedad Intelectual</h4>
+            <p>Todos los contenidos del sitio web (incluyendo, sin carácter limitativo, bases de datos, imágenes y
+                fotografías, dibujos, gráficos y archivos de texto) son propiedad de HCAA o de los proveedores de
+                contenidos, habiendo sido, en este último caso, objeto de licencia o cesión por parte de los mismos, y
+                están protegidos por las normas nacionales e internacionales de propiedad intelectual.</p>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">Responsabilidad</h4>
+            <p>HCAA no garantiza la inexistencia de interrupciones o errores en el acceso al sitio web, aunque
+                desarrollará sus mejores esfuerzos para, en su caso, evitarlos, subsanarlos o actualizarlos. HCAA no se
+                hace responsable de los posibles errores de seguridad que se puedan producir ni de los posibles daños
+                que puedan causarse al sistema informático del usuario.</p>
+        </div>
+    </div>
+
+    <div id="modal-content-legal-cookies" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Política de Cookies</h3>
+            <p style="margin-bottom: 16px;">En HCAA utilizamos cookies propias y de terceros para mejorar nuestros
+                servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de
+                navegación.</p>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">¿Qué son las cookies?</h4>
+            <p>Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las
+                cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los
+                hábitos de navegación de un usuario o de su equipo.</p>
+
+            <h4 style="color: var(--primary); margin: 16px 0 8px;">Gestión de Cookies</h4>
+            <p>Usted puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración
+                de las opciones del navegador instalado en su ordenador.</p>
         </div>
     </div>
 
