@@ -17,8 +17,10 @@ function openModal(serviceId) {
             </div>
         `;
 
-        // Re-initialize icons inside the modal
-        lucide.createIcons();
+        // Re-initialize icons inside the modal if Lucide is available
+        if (typeof lucide !== 'undefined' && lucide.createIcons) {
+            lucide.createIcons();
+        }
 
         overlay.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling

@@ -600,6 +600,7 @@ img {
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
+
 /* Usage: Modal Call to Action */
 .modal-cta {
     margin-top: 2rem;
@@ -743,3 +744,8 @@ img {
     font-size: 0.8rem;
 }
 
+
+/* Utility for hidden modal templates */
+.hidden-modal-content {
+    display: none !important;
+}
