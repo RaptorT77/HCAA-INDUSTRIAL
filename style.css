@@ -281,6 +281,11 @@ img {
     }
 }
 
+.mobile-menu.active {
+    display: flex;
+    animation: fadeIn 0.3s ease forwards;
+}
+
 /* Mobile Menu (Active State) */
 .nav-menu.mobile-active {
     display: flex;

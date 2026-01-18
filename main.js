@@ -1,5 +1,48 @@
 // HCAA Landing Page Logic
 
+// Modal Logic
+function openModal(serviceId) {
+    const overlay = document.getElementById('modal-overlay');
+    const contentTemplate = document.getElementById(`modal-content-${serviceId}`);
+
+    if (contentTemplate) {
+        // Clone the content to avoid moving it from its template location
+        // Actually, since they are hidden divs, we can just grab innerHTML
+        const contentHtml = contentTemplate.innerHTML;
+
+        overlay.innerHTML = `
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="closeModal()"><i data-lucide="x"></i></button>
+                ${contentHtml}
+            </div>
+        `;
+
+        // Re-initialize icons inside the modal
+        lucide.createIcons();
+
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeModal() {
+    const overlay = document.getElementById('modal-overlay');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+
+    // Optional: clear content after animation
+    setTimeout(() => {
+        overlay.innerHTML = '';
+    }, 300);
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Icons
     lucide.createIcons();

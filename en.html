@@ -191,7 +191,7 @@
                 <div class="services-grid fade-up"
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
                     <!-- Card 1 -->
-                    <article class="service-card">
+                    <article class="service-card" onclick="openModal('robotics')">
                         <div class="service-icon"><i data-lucide="bot"></i></div>
                         <h3>Industrial Robotics</h3>
                         <p class="text-muted">
@@ -201,7 +201,7 @@
                     </article>
 
                     <!-- Card 2 -->
-                    <article class="service-card">
+                    <article class="service-card" onclick="openModal('manufacturing')">
                         <div class="service-icon"><i data-lucide="factory"></i></div>
                         <h3>Specialized Manufacturing</h3>
                         <p class="text-muted">
@@ -211,7 +211,7 @@
                     </article>
 
                     <!-- Card 3 -->
-                    <article class="service-card">
+                    <article class="service-card" onclick="openModal('plc')">
                         <div class="service-icon"><i data-lucide="cpu"></i></div>
                         <h3>PLC & Robotics Programming</h3>
                         <p class="text-muted">
@@ -221,7 +221,7 @@
                     </article>
 
                     <!-- Card 4 -->
-                    <article class="service-card">
+                    <article class="service-card" onclick="openModal('engineering')">
                         <div class="service-icon"><i data-lucide="ruler"></i></div>
                         <h3>Project Engineering</h3>
                         <p class="text-muted">
@@ -231,7 +231,7 @@
                     </article>
 
                     <!-- Card 5 -->
-                    <article class="service-card">
+                    <article class="service-card" onclick="openModal('installation')">
                         <div class="service-icon"><i data-lucide="wrench"></i></div>
                         <h3>Installation & Commissioning</h3>
                         <p class="text-muted">
@@ -241,7 +241,7 @@
                     </article>
 
                     <!-- Card 6 -->
-                    <article class="service-card">
+                    <article class="service-card" onclick="openModal('virtual')">
                         <div class="service-icon"><i data-lucide="monitor-play"></i></div>
                         <h3>Virtual Commissioning</h3>
                         <p class="text-muted">
@@ -345,6 +345,149 @@
             </div>
         </div>
     </footer>
+
+    <!-- Service Modals -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <!-- Content will be injected dynamically -->
+    </div>
+
+    <!-- Hidden Templates for Modals (English) -->
+    <div id="modal-content-robotics" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Industrial Robotics</h3>
+            <p>HCAA implements advanced robotic integration solutions combining specialized engineering with
+                cutting-edge technologies, driving the digital transformation of productive processes.</p>
+            <p>Our services include:</p>
+            <ul>
+                <li>Integration of industrial and collaborative robots in automated cells</li>
+                <li>Configuration and programming of robots for manufacturing, assembly, and quality control</li>
+                <li>Implementation of mobility, joining, welding, vision, transport, and adhesion technologies</li>
+                <li>Real-time communication between PLC, HMI, and SCADA systems</li>
+                <li>Development of IoT solutions for remote monitoring and predictive analysis</li>
+                <li>Virtual simulation and testing to reduce commissioning times</li>
+                <li>Specialized technical training for operation and maintenance teams</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-content-manufacturing" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Specialized Manufacturing</h3>
+            <p>HCAA manufactures customized solutions for multiple sectors, offering integral services from initial
+                design to final product delivery. We transform technical requirements into concrete results through
+                reliable processes and high-quality standards.</p>
+            <p>Our services include:</p>
+            <ul>
+                <li>Fabrication of mechanical components, metal structures, and technical parts using CAD/CAM technology
+                    and CNC machinery</li>
+                <li>Production of electrical and electronic systems, including wiring, control panels, sensors, and
+                    integrated assemblies</li>
+                <li>Specialized manufacturing processes: welding, machining, laser cutting, plastic injection, and
+                    surface treatments</li>
+                <li>Supply chain management, from raw material acquisition to finished product delivery logistics</li>
+                <li>Integration of industrial equipment manufactured under operation, safety, and current regulation
+                    specifications</li>
+                <li>Technical documentation, traceability, and quality control as an integral part of every
+                    manufacturing process</li>
+                <li>On-demand or project-based manufacturing, adapting to sectors such as automotive, food, energy,
+                    pharmaceutical, and more</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-content-plc" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>PLC & Robotics Programming</h3>
+            <p>HCAA specializes in the development, implementation, and optimization of technological solutions for
+                industrial automation, focusing on the programming of programmable logic controllers (PLCs) and advanced
+                robotic systems.</p>
+            <p>Our scope comprises:</p>
+            <ul>
+                <li>Design and programming of PLC systems under national and international standards, using structured
+                    languages to guarantee efficiency and versatility</li>
+                <li>Integration of industrial robots in automated environments, from initial configuration to
+                    development of specific operation routines for manufacturing, assembly, and quality control</li>
+                <li>Communication between PLC, HMI, and SCADA systems, ensuring efficient visualization, supervision,
+                    and control of industrial processes in real time</li>
+                <li>Development of IoT solutions allowing remote monitoring, operational data traceability, and
+                    predictive analysis for continuous process improvement</li>
+                <li>Virtual simulation and testing of automated systems via digital platforms to reduce commissioning
+                    times and minimize operational risks</li>
+                <li>Specialized technical training aimed at maintenance, engineering, and operation teams, fostering
+                    practical knowledge in programming, safety, and efficiency in automated industrial environments</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-content-engineering" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Project Engineering</h3>
+            <p>HCAA develops integral engineering solutions, focused on mechanical and electrical design for industrial,
+                commercial, and technological projects.</p>
+            <p>We offer:</p>
+            <ul>
+                <li>Mechanical design of structures, components, and systems, using CAD/CAE tools to guarantee
+                    precision, functionality, and resistance</li>
+                <li>Electrical design of power, control, and signaling systems, complying with technical regulations and
+                    energy efficiency criteria</li>
+                <li>Multidisciplinary integration allowing harmonization between mechanical and electrical elements from
+                    the conceptual phase to project execution</li>
+                <li>Technical documentation, simulation, and modeling services, ensuring traceability and correct
+                    implementation of each solution</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-content-installation" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Installation & Commissioning</h3>
+            <p>HCAA offers integral industrial assembly services, covering electrical installations, mechanical
+                assemblies, and equipment commissioning, with a focus on efficiency, safety, and compliance with
+                technical standards.</p>
+            <p>Our services comprise:</p>
+            <ul>
+                <li>Mechanical assembly of structures, production lines, special equipment, and transport systems, under
+                    technical blueprints and client specifications</li>
+                <li>Low and medium voltage electrical assembly, including cabling, control panel installation,
+                    instrumentation, and automation</li>
+                <li>Installation and commissioning of industrial machinery and equipment, guaranteeing correct
+                    alignment, leveling, and system operation</li>
+                <li>Technical supervision, functional testing, and site documentation, ensuring traceability and quality
+                    in every project phase</li>
+                <li>Skilled personnel and rigorous compliance with industrial safety norms, applying international
+                    standards and best practices</li>
+            </ul>
+            <p>Our commitment is to provide reliable solutions that boost our clients' productivity, integrating
+                mechanical and electrical components in diverse industrial environments.</p>
+        </div>
+    </div>
+
+    <div id="modal-content-virtual" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Virtual Commissioning</h3>
+            <p>HCAA offers advanced Virtual Commissioning solutions, allowing the validation of automation systems and
+                process behavior control in digital environments before physical implementation. This approach
+                guarantees efficiency, precision, and reduction of times and costs in project commissioning.</p>
+            <p>Main services include:</p>
+            <ul>
+                <li>Simulation of automated systems, replicating the interaction of PLCs, HMIs, sensors, and actuators
+                    in virtual platforms</li>
+                <li>Validation of control logic and operational sequences before real installation, allowing preventive
+                    adjustments in design</li>
+                <li>Reduction of downtime and rework through exhaustive testing in controlled environments</li>
+                <li>Integration tests with electrical, mechanical, and robotic systems, ensuring coherence between
+                    technical disciplines</li>
+                <li>Use of tools like Siemens, Rockwell Emulate, and CAD/CAE tools for realistic and connected
+                    simulation</li>
+                <li>Collaboration between engineering, programming, and operation teams, facilitating joint system
+                    validation</li>
+                <li>Training on virtual environments and simulation protocols, strengthening technical knowledge of
+                    involved personnel</li>
+            </ul>
+            <p>Through our Virtual Commissioning approach, we accompany companies in their transition towards more
+                agile, safe, and digitally prepared projects, aligning with Industry 4.0 principles.</p>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
