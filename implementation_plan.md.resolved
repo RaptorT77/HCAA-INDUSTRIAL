@@ -1,0 +1,47 @@
+# Redesign Plan: HCAA-INDUSTRIAL (Target: rbxprogramming.com)
+
+## Goal
+Redesign the HCAA landing page to match the visual style, layout, and "industrial tech" aesthetic of [rbxprogramming.com](https://rbxprogramming.com/).
+
+## User Review Required
+> [!IMPORTANT]
+> This is a **complete visual overhaul**.
+> - **Theme Change**: Moving from Dark/Cyan to **Industrial Dark/White/Orange (#FE3800)**.
+> - **Font Change**: Switching to **DM Sans** for all text.
+> - **Layout Change**: Reordering sections to match the target site (Hero -> Services Grid -> Features -> Stats Bar -> Why Us List -> Contact).
+
+## Proposed Changes
+
+### Assets & Design System
+#### [MODIFY] [style.css](file:///c:/HCAA-INDUSTRIAL/style.css)
+- Import **DM Sans** from Google Fonts.
+- Update CSS Variables:
+    - Primary Color: `#FE3800` (Orange)
+    - backgrounds: Mix of `#FFFFFF` (Content), `#000000` (Footer), Dark Overlay (Hero).
+- Implement new utility classes for:
+    - "Ghost" buttons (Orange border, transparent fill).
+    - Big Outlined Numbers (for "Why Us" section).
+    - Stats Bar styling.
+
+### Structure & Content
+#### [MODIFY] [index.html](file:///c:/HCAA-INDUSTRIAL/index.html)
+- **Header**: Simplify. Logo Left, Hamburger Right (visual only for now), Clean Nav.
+- **Hero**: Align left. Big bold typography. "Ghost" button.
+- **Services**: Convert to 2x2 Grid or clean cards.
+- **[NEW SECTION] Stats Bar**: "In Figures" section (Orange background).
+- **Why Us**: Redesign as a list with large outlined numbers (01, 02...).
+- **Footer**: Redesign with high contrast Black/Orange.
+
+#### [MODIFY] [main.js](file:///c:/HCAA-INDUSTRIAL/main.js)
+- Ensure existing logic (Forms, Dates) still works with new ID/classes.
+- Update animations if needed to match the "industrial" feel.
+
+## Verification Plan
+### Automated Tests
+- None (Visual refactor).
+
+### Manual Verification
+1. **Visual Check**: Open [index.html](file:///c:/HCAA-INDUSTRIAL/index.html) in browser. Compare side-by-side with rbxprogramming.com screenshots/memory.
+2. **Responsiveness**: Check mobile view (hamburger menu appearance, stacking order).
+3. **Interactivity**: Test the Contact Form submission (ensure it still hits the webhook).
+4. **Hover Effects**: Verify buttons and cards have the correct hover states.
