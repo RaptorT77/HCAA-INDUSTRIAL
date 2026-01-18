@@ -4,6 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Icons
     lucide.createIcons();
 
+    // Mobile Menu Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('mobile-active');
+        });
+    }
+
     // Set Date (Local YYYY-MM-DD)
     const dateField = document.getElementById('fecha');
     const setDate = () => {

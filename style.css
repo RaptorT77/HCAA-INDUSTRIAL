@@ -216,7 +216,83 @@ img {
 .nav-toggle {
     cursor: pointer;
     display: flex;
-    /* Placeholder for hamburger icon */
+    font-size: 24px;
+}
+
+/* Header Actions (Lang + Toggle) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+}
+
+/* Language Switcher */
+.lang-switch {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.lang-switch a {
+    color: var(--text-muted);
+}
+
+.lang-switch a.active {
+    color: #000;
+}
+
+.lang-switch a:hover {
+    color: var(--primary);
+}
+
+.divider {
+    color: var(--border-light);
+}
+
+/* Navigation Menu (Desktop) */
+.nav-menu {
+    display: none;
+    /* Hidden on mobile by default */
+}
+
+@media (min-width: 1024px) {
+    .nav-toggle {
+        display: none;
+        /* Hide hamburger on desktop */
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: var(--space-6);
+    }
+
+    .nav-link {
+        font-size: var(--text-sm);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--text-dark);
+        letter-spacing: 0.05em;
+    }
+
+    .nav-link:hover {
+        color: var(--primary);
+    }
+}
+
+/* Mobile Menu (Active State) */
+.nav-menu.mobile-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: var(--space-6);
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
