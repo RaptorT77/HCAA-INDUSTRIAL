@@ -114,8 +114,10 @@
                         <p class="text-muted" style="font-size: 0.95rem;">90+ patents in industrial robotics and control
                             systems.</p>
                     </div>
-                    <div
-                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light);">
+                    <div onclick="openModal('complete-chain')"
+                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); cursor: pointer; transition: transform 0.2s;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
                         <div class="text-primary" style="margin-bottom: 12px;"><i data-lucide="layers"
                                 style="width: 24px;"></i></div>
                         <h4 style="margin-bottom: 8px;">Complete Chain</h4>
@@ -424,6 +426,16 @@
                 manufacturer, it develops and produces all critical components: controllers, servo motors, intelligent
                 sensors, and complete robots. This vertical integration ensures total compatibility, direct technical
                 support, and customization capability according to specific manufacturing requirements.</p>
+        </div>
+    </div>
+
+    <!-- Chain Complete Modal -->
+    <div id="modal-content-complete-chain" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Complete Chain</h3>
+            <p>Manufacturer with total vertical integration: in-house production of CRP controllers, servo motors,
+                drivers, sensors, and complete robots. Quality control at every phase, from electronic design to final
+                assembly. Technical customization capability and direct support from development engineering.</p>
         </div>
     </div>
 
