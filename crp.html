@@ -134,8 +134,10 @@
                         <p class="text-muted" style="font-size: 0.95rem;">"Empezar con soldadura, basarse en soldadura,
                             ir más allá de soldadura".</p>
                     </div>
-                    <div
-                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light);">
+                    <div onclick="openModal('price-value')"
+                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); cursor: pointer; transition: transform 0.2s;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
                         <div class="text-primary" style="margin-bottom: 12px;"><i data-lucide="trending-up"
                                 style="width: 24px;"></i></div>
                         <h4 style="margin-bottom: 8px;">Precio-Valor</h4>
@@ -457,6 +459,16 @@
                 dominando los procesos más exigentes de la robótica industrial: soldadura MIG/MAG, TIG y por puntos.
                 Esta maestría en aplicaciones críticas garantiza que sus robots para manipulación y ensamble ofrezcan el
                 mismo nivel de precisión y confiabilidad.</p>
+        </div>
+    </div>
+
+    <!-- Price-Value Modal -->
+    <div id="modal-content-price-value" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Precio-Valor</h3>
+            <p>Relación precio-rendimiento superior vs. marcas tradicionales. Reducción de 40-60% en inversión inicial
+                con especificaciones técnicas comparables. Tecnología propia, calidad industrial certificada y soporte
+                directo del fabricante. Robótica avanzada sin barreras económicas.</p>
         </div>
     </div>
 

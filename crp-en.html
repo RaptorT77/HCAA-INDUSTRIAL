@@ -134,8 +134,10 @@
                         <p class="text-muted" style="font-size: 0.95rem;">"Start with welding, base on welding, more
                             than welding".</p>
                     </div>
-                    <div
-                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light);">
+                    <div onclick="openModal('price-value')"
+                        style="padding: 24px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); cursor: pointer; transition: transform 0.2s;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
                         <div class="text-primary" style="margin-bottom: 12px;"><i data-lucide="trending-up"
                                 style="width: 24px;"></i></div>
                         <h4 style="margin-bottom: 8px;">Price-Value</h4>
@@ -449,6 +451,16 @@
                 most demanding processes in industrial robotics: MIG/MAG, TIG, and spot welding. This mastery in
                 critical applications ensures that its handling and assembly robots offer the same level of precision
                 and reliability.</p>
+        </div>
+    </div>
+
+    <!-- Price-Value Modal -->
+    <div id="modal-content-price-value" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body">
+            <h3>Price-Value</h3>
+            <p>Superior price-performance ratio vs. traditional brands. 40-60% reduction in initial investment with
+                comparable technical specifications. Proprietary technology, certified industrial quality, and direct
+                manufacturer support. Advanced robotics without economic barriers.</p>
         </div>
     </div>
 
