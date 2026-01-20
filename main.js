@@ -59,6 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Language Preference Persistence
+    const langLinks = document.querySelectorAll('.lang-switch a');
+    langLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const lang = link.textContent.trim().toLowerCase();
+            if (lang === 'en' || lang === 'es') {
+                localStorage.setItem('language_pref', lang);
+            }
+        });
+    });
+
     // Set Date (Local YYYY-MM-DD)
     const dateField = document.getElementById('fecha');
     const setDate = () => {

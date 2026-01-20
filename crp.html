@@ -12,6 +12,14 @@
     <meta name="description"
         content="Distribuidor autorizado de robots CROBOTP en México. Soluciones de soldadura, paletizado y cobots. Tecnología CRP con soporte local y refacciones. ¡Cotice aquí!">
     <link rel="preload" as="image" href="hero.png" fetchpriority="high">
+    <script>
+        (function () {
+            const pref = localStorage.getItem('language_pref');
+            if (pref === 'en') {
+                window.location.href = 'crp-en.html' + window.location.hash;
+            }
+        })();
+    </script>
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {

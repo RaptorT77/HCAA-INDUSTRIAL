@@ -12,6 +12,14 @@
     <meta name="description"
         content="Expertos en automatización industrial, programación de PLC, robótica y sistemas SCADA. Optimice su producción hoy. ¡Solicite una cotización en HCAA!">
     <link rel="preload" as="image" href="hero.png" fetchpriority="high">
+    <script>
+        (function () {
+            const pref = localStorage.getItem('language_pref');
+            if (pref === 'en') {
+                window.location.href = 'en.html' + window.location.hash;
+            }
+        })();
+    </script>
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
