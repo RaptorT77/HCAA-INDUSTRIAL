@@ -93,7 +93,7 @@
         <section class="section-spacing bg-white">
             <div class="container">
                 <div class="text-center fade-up" style="max-width: 800px; margin: 0 auto 64px auto;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 24px;">HCAA - Authorized CROBOTP Distributor</h2>
+                    <h2 class="heading-lg" style="margin-bottom: 24px;">HCAA - Authorized CROBOTP Distributor</h2>
                     <p class="text-muted" style="font-size: 1.1rem;">
                         HCAA is an authorized distributor of Chengdu CRP (CROBOTP), a leading Chinese manufacturer of
                         industrial robotics with over 90 technology patents and experience since 2007 in developing
@@ -153,7 +153,7 @@
             <div class="container">
                 <div class="text-center fade-up" style="margin-bottom: 48px;">
                     <span class="text-primary" style="font-weight: 700; text-transform: uppercase;">Portfolio</span>
-                    <h2 style="font-size: 2.5rem; margin-top: 8px;">CROBOTP PRODUCT LINE</h2>
+                    <h2 class="heading-lg" style="margin-top: 8px;">CROBOTP PRODUCT LINE</h2>
                 </div>
 
                 <div class="fade-up"
@@ -190,12 +190,14 @@
                     </article>
 
                     <!-- Handling Robots -->
-                    <article
-                        style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                        <div style="height: 200px; overflow: hidden;">
+                    <article onclick="openModal('modal-content-handling')"
+                        style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 200px; overflow: hidden; background: #fff;">
                             <img src="https://www.crobotp-robot.com/uploads/29413/list/n20240529141953c7ea4.jpg?size=360x0"
                                 alt="CROBOTP Handling Robots"
-                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                                style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
                         </div>
                         <div style="padding: 24px;">
                             <h3 style="margin-bottom: 12px; color: var(--primary);">Handling Robots</h3>
@@ -242,7 +244,7 @@
         <section class="section-spacing bg-dark text-white">
             <div class="container">
                 <div class="text-center fade-up" style="margin-bottom: 48px;">
-                    <h2 class="text-white" style="font-size: 2.5rem;">COMPREHENSIVE HCAA + CROBOTP SOLUTION</h2>
+                    <h2 class="text-white heading-lg">COMPREHENSIVE HCAA + CROBOTP SOLUTION</h2>
                     <p style="opacity: 0.8; max-width: 700px; margin: 0 auto;">We offer added value through our
                         engineering and local support.</p>
                 </div>
@@ -282,7 +284,7 @@
         <section id="contacto" class="section-spacing bg-white">
             <div class="container" style="max-width: 800px;">
                 <div class="text-center" style="margin-bottom: 48px;">
-                    <h2 style="font-size: 2.5rem;">FREE EVALUATION</h2>
+                    <h2 class="heading-lg">FREE EVALUATION</h2>
                     <p class="text-muted">Need to automate with high-value industrial robotics? Contact us to evaluate
                         your application.</p>
                 </div>
@@ -460,6 +462,89 @@
     </div>
 
     <!-- Main JS -->
+    <div id="modal-content-handling" class="hidden-modal-content" style="display:none;">
+        <div class="modal-body" style="max-width: 1000px; width: 90%;">
+            <h3 style="text-align: center; margin-bottom: 24px; color: var(--primary);">Handling Robots Catalog</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;">
+                <!-- Product 1 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/29413/crp-rh14-1059566.jpg?size=365x0"
+                        alt="CRP-RH14-10"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RH14-10</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 10kg | Reach: 1400mm</p>
+                </div>
+                <!-- Product 2 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/202429413/small/crp-rs10-20z40ca8cacf0-e740-4869-9f44-0f3af83ab5a3.png?size=365x0"
+                        alt="CRP-RS10-20Z40"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RS10-20Z40</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 20kg | Reach: 1000mm</p>
+                </div>
+                <!-- Product 3 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/202429413/small/crp-rs08-20z40d5f9df02-4401-4770-9c5d-bd9a371ae42e.png?size=365x0"
+                        alt="CRP-RS08-20Z40"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RS08-20Z40</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 20kg | Reach: 800mm</p>
+                </div>
+                <!-- Product 4 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/29413/page/small/crp-rs08-10z40hd4840.png?size=365x0"
+                        alt="CRP-RS08-10Z40H"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RS08-10Z40H</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 10kg | Reach: 800mm</p>
+                </div>
+                <!-- Product 5 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/202429413/small/crp-rh32-13080a72796-f8a2-4727-a905-9d6ff0271989.png?size=365x0"
+                        alt="CRP-RH32-130"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RH32-130</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 130kg | Reach: 3200mm</p>
+                </div>
+                <!-- Product 6 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/202429413/small/crp-rh26-165-185-210d14a8633-99e8-43bd-b24e-83c7c0d9b409.png?size=365x0"
+                        alt="CRP-RH26-165"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RH26-165</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 165kg | Reach: 2600mm</p>
+                </div>
+                <!-- Product 7 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/29413/crp-ra20-1216fd1.png?size=365x0"
+                        alt="CRP-RA20-12"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RA20-12</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 12kg | Reach: 2015mm</p>
+                </div>
+                <!-- Product 8 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/29413/crp-rp24-13041c4e.png?size=365x0"
+                        alt="CRP-RP24-130"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RP24-130</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 130kg | Reach: 2400mm</p>
+                </div>
+                <!-- Product 9 -->
+                <div style="border: 1px solid #eee; padding: 16px; border-radius: 8px; text-align: center;">
+                    <img src="https://www.crobotp-robot.com/uploads/29413/small/crp-rh18-2034644.jpg?size=365x0"
+                        alt="CRP-RH18-20"
+                        style="max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 12px;">
+                    <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">CRP-RH18-20</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Payload: 20kg | Reach: 1800mm</p>
+                </div>
+            </div>
+            <div style="margin-top: 24px; text-align: center;">
+                <a href="https://www.crobotp-robot.com/handling-robot/" target="_blank"
+                    style="color: var(--primary); text-decoration: underline;">View Full Catalog on CROBOTP</a>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
     <script>
         // Init Lucide
