@@ -4,8 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCAA | Advanced Industrial Automation</title>
-    <meta name="description" content="High-level industrial automation. PLC, SCADA, and Robotics to maximize your ROI.">
+    <link rel="canonical" href="https://hcaa-industrial.com/en.html">
+    <link rel="alternate" hreflang="es" href="https://hcaa-industrial.com/">
+    <link rel="alternate" hreflang="en" href="https://hcaa-industrial.com/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://hcaa-industrial.com/">
+    <title>HCAA | Industrial Automation: Robotics, PLC & SCADA Solutions</title>
+    <meta name="description"
+        content="Experts in industrial automation, PLC programming, robotics, and SCADA systems. Optimize your production today. Request a quote from HCAA!">
+    <link rel="preload" as="image" href="hero.png" fetchpriority="high">
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://hcaa-industrial.com/#organization",
+          "name": "HC Advanced Automation",
+          "alternateName": "HCAA",
+          "url": "https://hcaa-industrial.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://hcaa-industrial.com/logo.png",
+            "width": "100",
+            "height": "32"
+          },
+          "description": "Systems integrator specializing in industrial automation, robotics, and digital transformation.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-222-123-4567",
+            "contactType": "sales",
+            "areaServed": ["MX", "US", "Latin America"],
+            "availableLanguage": ["en", "es"]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/hc-advanced-automation",
+            "https://www.facebook.com/HCAASAdeCV",
+            "https://www.instagram.com/hc_advanced_automation/"
+          ]
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Industrial Robotics",
+          "provider": { "@id": "https://hcaa-industrial.com/#organization" },
+          "description": "Integration of robotic cells for welding, palletizing, assembly, and handling."
+        },
+        {
+          "@type": "Service",
+          "serviceType": "PLC Programming",
+          "provider": { "@id": "https://hcaa-industrial.com/#organization" },
+          "description": "Development of standardized control logic for PLCs and robots under OEM standards."
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Virtual Commissioning",
+          "provider": { "@id": "https://hcaa-industrial.com/#organization" },
+          "description": "Digital validation of control logic via simulation before physical construction."
+        }
+      ]
+    }
+    </script>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/favicon.png?v=2" type="image/png">
@@ -18,8 +76,9 @@
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
-            <a href="index.html" class="logo">
-                <img src="logo.png" alt="HCAA Logo" style="height: 32px;">
+            <a href="index.html" class="logo" aria-label="HCAA Home">
+                <img src="logo.png" alt="HCAA Logo - Industrial Automation" width="100" height="32"
+                    style="height: 32px; width: auto;" fetchpriority="high">
                 <span>HCAA</span>
             </a>
 
@@ -43,7 +102,7 @@
                 </div>
 
                 <!-- Mobile Toggle -->
-                <div class="nav-toggle" id="navToggle">
+                <div class="nav-toggle" id="navToggle" role="button" aria-label="Toggle Navigation Menu">
                     <i data-lucide="menu"></i>
                 </div>
             </div>
@@ -518,15 +577,18 @@
                         <p>Advanced Industrial Automation.</p>
                         <div style="display: flex; gap: 12px;">
                             <a href="https://www.linkedin.com/company/27024052/admin/page-posts/published/"
-                                target="_blank" class="text-white" style="opacity: 0.7; transition: opacity 0.2s;">
+                                target="_blank" class="text-white" style="opacity: 0.7; transition: opacity 0.2s;"
+                                aria-label="LinkedIn">
                                 <i data-lucide="linkedin" style="width: 24px;"></i>
                             </a>
                             <a href="https://web.facebook.com/HCAASAdeCV?rdid=aJtBUUJmTIuAgnxh&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F16rMFFv9DS%2F%3F_rdc%3D1%26_rdr#"
-                                target="_blank" class="text-white" style="opacity: 0.7; transition: opacity 0.2s;">
+                                target="_blank" class="text-white" style="opacity: 0.7; transition: opacity 0.2s;"
+                                aria-label="Facebook">
                                 <i data-lucide="facebook" style="width: 24px;"></i>
                             </a>
                             <a href="https://www.tiktok.com/@hcadvancesautomation?_r=1&_t=ZT-93AzwfePL4g"
-                                target="_blank" class="text-white" style="opacity: 0.7; transition: opacity 0.2s;">
+                                target="_blank" class="text-white" style="opacity: 0.7; transition: opacity 0.2s;"
+                                aria-label="TikTok">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-tiktok">
@@ -534,7 +596,8 @@
                                 </svg>
                             </a>
                             <a href="https://www.instagram.com/hc_advanced_automation/" target="_blank"
-                                class="text-white" style="opacity: 0.7; transition: opacity 0.2s;">
+                                class="text-white" style="opacity: 0.7; transition: opacity 0.2s;"
+                                aria-label="Instagram">
                                 <i data-lucide="instagram" style="width: 24px;"></i>
                             </a>
                         </div>
